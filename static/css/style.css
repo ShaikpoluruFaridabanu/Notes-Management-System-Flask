@@ -1,0 +1,10 @@
+body { font-family: "Segoe UI", system-ui, sans-serif; }
+.navbar-brand { font-weight: 600; letter-spacing: .3px; }
+.card { border: 0; border-radius: 12px; }
+.note-card { transition: transform .15s ease, box-shadow .15s ease; }
+.note-card:hover { transform: translateY(-4px); box-shadow: 0 .6rem 1.2rem rgba(0,0,0,.12) !important; }
+.note-text { white-space: pre-wrap; word-break: break-word; }
+footer { font-size: .9rem; }
+@media (max-width: 576px) {
+  .navbar .btn { padding: .2rem .5rem; font-size: .8rem; }
+}

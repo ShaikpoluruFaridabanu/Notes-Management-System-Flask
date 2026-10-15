@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block title %}Edit Note{% endblock %}
+{% block content %}
+<h4 class="mb-3">Edit note</h4>
+<form method="post" class="card card-body shadow-sm">
+  <div class="mb-3"><label class="form-label">Title</label><input name="title" maxlength="100" value="{{ note.title }}" class="form-control" required></div>
+  <div class="mb-3"><label class="form-label">Content</label><textarea name="content" rows="8" class="form-control">{{ note.content }}</textarea></div>
+  <div><button class="btn btn-success">Update</button> <a class="btn btn-secondary" href="{{ url_for('viewall') }}">Cancel</a></div>
+</form>
+{% endblock %}
